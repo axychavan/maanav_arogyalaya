@@ -1,0 +1,32 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    font-size: 14px;
+}
+
+.navbar {
+    background-color: #E0FFFF;
+}
+
+.nav-link:hover {
+    background-color: #9AFEFF;
+}
+
+.jumbotron {
+    background-color: #F0FFFF;
+}
+
+.carousel {
+    width: 80%;
+    height: 80%;
+}
+
+.foot1 {
+    background-color: #F0FFFF;
+}
+
+.foot2 {
+    background-color: #E0FFFF;
+}
