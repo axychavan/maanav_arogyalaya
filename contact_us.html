@@ -1,145 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- To include header and footer-->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
         </script>
     <script>
         $(function () {
-            $("#header").load("common/header.html");
-            $("#footer").load("common/footer.html");
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
         });
     </script>
+
+    <title>Online Yog Class</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
 </head>
 
 <body>
-    <!-- Navbar -->
+
+    <!-- Header -->
     <div id="header"></div>
 
-    <!-- Main Content -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Contact Us</h1>
-            <p class="lead">
-                Reach out to us through social media.
-            </p>
-        </div>
+    <!-- Jumbotron -->
+    <div class="jumbotron p-5">
+        <h1 class="display-4">Contact Us</h1>
+        <p class="lead">Don't hesitate to get in touch with us either through our contact address or by filling out the
+            form, and we'll be sure to reach out to you.</p>
     </div>
 
-    <div class="card m-3">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-6">
-                    <h4>Our Information</h4>
-                    <hr>
-                    <h5>Phone no. (WhatsApp no.)</h5>
-                    <p>
-                        <a href="tel:+919881795173">+91 9881795173</a>
-                    </p>
-                    <h5>Email Address</h5>
-                    <p>
-                        <a href="mailto:madhusudannade@gmail.com">madhusudannade@gmail.com</a>
-                    </p>
-                    <h5>Address</h5>
-                    <p>
-                        <span>ADDRESS HERE</span>
-                    </p>
-                    <h5>Social Media</h5>
-                    <p>
-                        <a class="mr-3"
-                            href="https://api.whatsapp.com/send?text=Hi, I would like to learn more about the online yoga classes.&phone=9881795173"
-                            class="text-reset" style="color: #7FE817; text-decoration: none;">
-                            <i class="bi bi-whatsapp"></i>
-                        </a>
-                        <a class="mr-3" href="#" class="text-reset" style="color: blue; text-decoration: none;">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a class="mr-3" href="#" class="text-reset" style="color: red; text-decoration: none;">
-                            <i class="bi bi-youtube"></i>
-                        </a>
-                    </p>
-                    <div class="d-flex justify-content-center">
-                        <img src="images/profile.jpg" alt="profile image" style="width:350px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4>Contact Information</h4>
+                        <hr>
+                        <dl>
+                            <dt>Call Us</dt>
+                            <dd>
+                                <a href="tel:+919881795173" class="link-primary">+91 9881795173</a>
+                            </dd>
+                            <dt>WhatsApp Us</dt>
+                            <dd>
+                                <a href="https://api.whatsapp.com/send?text=Hi, I would like to learn more about the online yoga classes.&phone=9881795173"
+                                    class="link-primary">+91 9881795173</a>
+                            </dd>
+                            <dt>Email Address</dt>
+                            <dd>
+                                <a href="mailto:madhusudannade@gmail.com"
+                                    class="link-primary">madhusudannade@gmail.com</a>
+                            </dd>
+                            <dt>Address</dt>
+                            <dd>
+                                Pune, Maharashtra.
+                            </dd>
+                            <dt>Social Media</dt>
+                            <dd>
+                                <a href="https://api.whatsapp.com/send?text=Hi, I would like to learn more about the online yoga classes.&phone=9881795173"
+                                    class="mr-3" style="color: #7FE817; text-decoration: none;">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                                <a href="#" class="mr-3" style="color: blue; text-decoration: none;">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="mr-3" style="color: red; text-decoration: none;">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </dd>
+                        </dl>
+                        <img src="images/img1.jpg" class="img-fluid" alt="Madhusudanji">
                     </div>
                 </div>
-                <div class="col-6">
-                    <h4>Register</h4>
-                    <hr>
-                    <form>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Full Name</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Phone no. (WhatsApp preffered)</label>
-                        </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Enquiry Form</h4>
+                        <hr>
+                        <form name="enquiryForm" method="post">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="name" placeholder="name@example.com">
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="phone" placeholder="name@example.com">
+                                <label for="phone">Phone no. (WhatsApp preffered)</label>
+                            </div>
 
-                        <div class="row g-2">
-                            <div class="col-md">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">State</label>
+                            <div class="row g-2">
+                                <div class="col-md">
+                                    <div class="form-floating mb-2">
+                                        <input type="number" class="form-control" id="height"
+                                            placeholder="name@example.com">
+                                        <label for="height">Height</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-2">
+                                        <input type="number" class="form-control" id="weight"
+                                            placeholder="name@example.com">
+                                        <label for="weight">Weight</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-2">
+                                        <input type="number" class="form-control" id="age"
+                                            placeholder="name@example.com" min="18" max="100">
+                                        <label for="age">Age</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">City</label>
+
+                            <div class="row g-2">
+                                <div class="col-md">
+                                    <div class="form-floating mb-2">
+                                        <input type="text" class="form-control" id="location"
+                                            placeholder="name@example.com">
+                                        <label for="location">Location</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-2">
+                                        <select class="form-select" id="batchTime"
+                                            aria-label="Floating label select example">
+                                            <option value="" selected disabled>Select ...</option>
+                                            <option value="Batch 1">(Batch 1) - 6:25 AM - 7:20 AM</option>
+                                            <option value="Batch 2">(Batch 2) - 7:25 AM - 8:20 AM</option>
+                                        </select>
+                                        <label for="batchTime">Select Batch Timing</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row g-2">
-                            <div class="col-md">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Height</label>
-                                </div>
+                            <div class="form-floating mb-2">
+                                <textarea rows="3" style="height:100%;" class="form-control"
+                                    placeholder="Leave a comment here" id="disorders"></textarea>
+                                <label for="disorders">Any disorders, acute diseases, chronic diseases ?
+                                    (optional)</label>
                             </div>
-                            <div class="col-md">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Weight</label>
-                                </div>
+
+                            <div class="form-floating mb-3">
+                                <textarea rows="3" style="height:100%;" class="form-control"
+                                    placeholder="Leave a comment here" id="treatment"></textarea>
+                                <label for="treatment">Any ongoing medical treatment ? (optional)</label>
                             </div>
-                            <div class="col-md">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Age</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-floating">
-                            <textarea rows="3" style="height:100%;" class="form-control"
-                                placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                            <label for="floatingTextarea">Any disorders, acute diseases, chronic diseases ? (If not,
-                                enter NA)</label>
-                        </div>
-                        <br>
-
-                        <div class="form-floating">
-                            <textarea rows="3" style="height:100%;" class="form-control"
-                                placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                            <label for="floatingTextarea">Any ongoing medical treatment ? (If not, enter NA)</label>
-                        </div>
-                        <br>
-
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-outline-primary w-50">Register</button>
-                        </div>
-
-                    </form>
+                            <button type="submit" class="btn btn-primary w-100" onclick="sendWhatsapp()">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,6 +155,8 @@
 
     <!-- Footer -->
     <div id="footer"></div>
+
+    <script src="../scripts/myscripts.js"></script>
 
 </body>
 

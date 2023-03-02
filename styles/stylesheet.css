@@ -1,0 +1,54 @@
+/* Navbar */
+
+.nav-item {
+    margin-right: 40px;
+}
+
+.yog-section {
+    background-image: url('../images/temp1.png');
+    color: black;
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.background1 {
+    background-image: url(../images/img2.jpeg);
+    color: black;
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+}
+
+
+/* Testimonials */
+
+/* .t-cards {
+    height: 20px;
+} */
+
+.bi-quote {
+    font-size: 50px;
+    color: green;
+}
+
+.md-img {
+    height: 200px;
+    width: 200px;
+}
+
+.sm-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 20px;
+}

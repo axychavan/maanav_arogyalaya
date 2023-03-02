@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/stylesheet.css">
+
+    <!-- Google icons CDN -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <title>Online Yog Class</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
+</head>
+
+<body>
+    <header>
+
+        <!-- Mini header -->
+        <div class="container">
+            <div class="row p-2">
+                <div class="col-sm d-flex justify-content-center">
+                    <a href="tel:+919881795173" style="text-decoration: none;">+91 9881795173</a>
+                </div>
+                <div class="col-sm d-flex justify-content-center">
+                    <a href="mailto: maanavaarogyalaya@gmail.com"
+                        style="text-decoration: none;">maanavaarogyalaya@gmail.com</a>
+                </div>
+                <div class="col-sm d-flex justify-content-center">
+                    <a href="https://api.whatsapp.com/send?text=Hi, I would like to learn more about the online yoga classes.&phone=9881795173"
+                        style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#whatsapp"><i
+                            class="bi bi-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- WhatsApp Form Modal -->
+        <div class="modal fade" id="whatsapp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Enquiry Form</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="enquiryForm" method="post">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="name" placeholder="name@example.com">
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="phone" placeholder="name@example.com">
+                                <label for="phone">Phone no. (WhatsApp preffered)</label>
+                            </div>
+
+                            <div class="row g-2">
+                                <div class="col-md">
+                                    <div class="form-floating mb-2">
+                                        <input type="number" class="form-control" id="height"
+                                            placeholder="name@example.com">
+                                        <label for="height">Height</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-2">
+                                        <input type="number" class="form-control" id="weight"
+                                            placeholder="name@example.com">
+                                        <label for="weight">Weight</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-2">
+                                        <input type="number" class="form-control" id="age"
+                                            placeholder="name@example.com" min="18" max="100">
+                                        <label for="age">Age</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-2">
+                                <div class="col-md">
+                                    <div class="form-floating mb-2">
+                                        <input type="text" class="form-control" id="location"
+                                            placeholder="name@example.com">
+                                        <label for="location">Location</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-2">
+                                        <select class="form-select" id="batchTime"
+                                            aria-label="Floating label select example">
+                                            <option value="" selected disabled>Select ...</option>
+                                            <option value="Batch 1">(Batch 1) - 6:25 AM - 7:20 AM</option>
+                                            <option value="Batch 2">(Batch 2) - 7:25 AM - 8:20 AM</option>
+                                        </select>
+                                        <label for="batchTime">Select Batch Timing</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-floating mb-2">
+                                <textarea rows="3" style="height:100%;" class="form-control"
+                                    placeholder="Leave a comment here" id="disorders"></textarea>
+                                <label for="disorders">Any disorders, acute diseases, chronic diseases ?
+                                    (optional)</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <textarea rows="3" style="height:100%;" class="form-control"
+                                    placeholder="Leave a comment here" id="treatment"></textarea>
+                                <label for="treatment">Any ongoing medical treatment ? (optional)</label>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="sendWhatsapp()">Submit</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <nav class="navbar navbar-expand-lg bg-light navbar-light p-3">
+            <a class="navbar-brand ms-3" href="index.html">
+                <img src="images/favicon.jpeg" width="30" height="30" class="d-inline-block align-top" alt="logo"
+                    style="border-radius: 50px;">
+                Online Yog Classes
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="about_achaaryaji.html">About Achaaryaji</a>
+                    <a class="nav-item nav-link" href="yog_therapy.html">Yog Therapy</a>
+                    <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+                    <a class="nav-item nav-link" href="contact_us.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script src="../scripts/myscripts.js"></script>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
